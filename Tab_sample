@@ -4,20 +4,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {font-family: "Lato", sans-serif;}
+.containers{
+border-radius: 10px;
+}
 
+.tablinkmom{
+  display: flex;
+  justify-content: center;
+  background-color: #F9F7FF;
+}
 .tablink {
+  align-items: center;
+  height: 40px;
   background-color: #F9F7FF;
   color: black;
-  float: left;
-  margin: 20px;
+  width: 25%;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
   border-width: 1px;
-  border-background: black;
-  border-radius: 10px;
+  border-color: #9b2bfc;
+  border-radius: 20px;
   outline: none;
   cursor: pointer;
-  padding: 10px;
-  font-size: 12px;
-  width: 20%;
+  font-size: 12px; 
 }
 
 .tablink:hover {
@@ -32,73 +43,57 @@ body {font-family: "Lato", sans-serif;}
   text-align: center;
 }
 
+#Tab1 {background-color:#F9F7FF;}
+#Tab2 {background-color:#F9F7FF;}
+#Tab3 {background-color:#F9F7FF;}
+#Tab4 {background-color:#F9F7FF;}
 
-
-.container button:active {
-  background-color: #ccc;
-}
-
-#Effortless {background-color:#F9F7FF;}
-#Production {background-color:#F9F7FF;}
-#Publishing {background-color:#F9F7FF;}
-#Optimization {background-color:#F9F7FF;}
-
-a .book-demo {
-background-color:#F9F7FF;
-border-width: 1px;
-border-color: #9B2BFC;
-border-radius: 7px;
-}
-.book-demo {
-background-color:#F9F7FF;
-border-color: #9B2BFC;
-border-radius: 7px;
-}
-.book-demo {
-background-color:#F9F7FF;
-border-color: #9B2BFC;
-border-radius: 7px;
-}
-.book-demo {
-background-color:#F9F7FF;
-border-color: #9B2BFC;
-border-radius: 7px;
+.mybutton {
+  background-color: #9b2bfc;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 20px;
 }
 
 </style>
 </head>
 <body>
 
-<div class="container">
+<div class="containers">
 
-
-<button class="tablink" onclick="openTab('Effortless', this, 'white')" id="defaultOpen">Effortless </button>
-<button class="tablink" onclick="openTab('Production', this, 'white')">Production </button>
-<button class="tablink" onclick="openTab('Publishing', this, 'white')">Publishing </button>
-<button class="tablink" onclick="openTab('Optimization', this, 'white')">Optimization</button>
+<div class="tablinkmom">
+<button class="tablink" onclick="openTab('Tab1', this, '#9b2bfc')" id="defaultOpen">Effortless </button>
+<button class="tablink" onclick="openTab('Tab2', this, '#9b2bfc')">Production </button>
+<button class="tablink" onclick="openTab('Tab3', this, '#9b2bfc')">Publishing </button>
+<button class="tablink" onclick="openTab('Tab4', this, '#9b2bfc')">Optimization</button>
 </div>
 
-<div id="Effortless" class="tabcontent">
-  <h1>Content creation </h1>
-  <p>Send in your products and let our robots do the heavy lifting! All you need to do is review and hit publish.</p>
+<div id="Tab1" class="tabcontent">
+  <h1>Tab 1</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <button id="myButton" class="mybutton" >Book a Demo</button>
+</div>
+
+<div id="Tab2" class="tabcontent">
+  <h1>Tab 2</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> 
   <a class="book-demo" href="https://www.eko-client.com/#form">Book a demo</a>
 </div>
 
-<div id="Production" class="tabcontent">
-  <h1>Smart and streamlined </h1>
-  <p>Using robotic cameras and automation, we capture high-resolution footage of your products and instantly produce interactive experiences.</p> 
+<div id="Tab3" class="tabcontent">
+  <h1>Tab 2</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <a class="book-demo" href="https://www.eko-client.com/#form">Book a demo</a>
 </div>
 
-<div id="Publishing" class="tabcontent">
-  <h1>Share and connect</h1>
-  <p>Integrate interactive experiences into your marketing funnel. Display them full screen or embed on any webpage!</p>
-  <a class="book-demo" href="https://www.eko-client.com/#form">Book a demo</a>
-</div>
-
-<div id="Optimization" class="tabcontent">
-  <h1>Data that works for you</h1>
-  <p>Gain actionable insights that translate to quick feature, copy, and footage edits with A/B testing and optimization support available</p>
+<div id="Tab4" class="tabcontent">
+  <h1>Tab 3</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
   <a class="book-demo" href="https://www.eko-client.com/#form">Book a demo</a>
 </div>
 
@@ -118,10 +113,10 @@ function openTab(tabName,elmnt,color) {
   }
   document.getElementById(tabName).style.display = "block";
   elmnt.style.backgroundColor = color;
-
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
 </script>
    
 </body>
