@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+  background-color: #F9F7FF;
+  color: black;
+  float: left;
+  margin: 20px;
+  border-width: 1px;
+  border-background: black;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 12px;
+  width: 20%;
+}
+
+.tablink:hover {
+  background-color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: black;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+
+
+.container button:active {
+  background-color: #ccc;
+}
+
+#Effortless {background-color:#F9F7FF;}
+#Production {background-color:#F9F7FF;}
+#Publishing {background-color:#F9F7FF;}
+#Optimization {background-color:#F9F7FF;}
+
+a .book-demo {
+background-color:#F9F7FF;
+border-width: 1px;
+border-color: #9B2BFC;
+border-radius: 7px;
+}
+.book-demo {
+background-color:#F9F7FF;
+border-color: #9B2BFC;
+border-radius: 7px;
+}
+.book-demo {
+background-color:#F9F7FF;
+border-color: #9B2BFC;
+border-radius: 7px;
+}
+.book-demo {
+background-color:#F9F7FF;
+border-color: #9B2BFC;
+border-radius: 7px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+
+<button class="tablink" onclick="openTab('Effortless', this, 'white')" id="defaultOpen">Effortless </button>
+<button class="tablink" onclick="openTab('Production', this, 'white')">Production </button>
+<button class="tablink" onclick="openTab('Publishing', this, 'white')">Publishing </button>
+<button class="tablink" onclick="openTab('Optimization', this, 'white')">Optimization</button>
+</div>
+
+<div id="Effortless" class="tabcontent">
+  <h1>Content creation </h1>
+  <p>Send in your products and let our robots do the heavy lifting! All you need to do is review and hit publish.</p>
+  <a class="book-demo" href="https://www.eko-client.com/#form">Book a demo</a>
+</div>
+
+<div id="Production" class="tabcontent">
+  <h1>Smart and streamlined </h1>
+  <p>Using robotic cameras and automation, we capture high-resolution footage of your products and instantly produce interactive experiences.</p> 
+  <a class="book-demo" href="https://www.eko-client.com/#form">Book a demo</a>
+</div>
+
+<div id="Publishing" class="tabcontent">
+  <h1>Share and connect</h1>
+  <p>Integrate interactive experiences into your marketing funnel. Display them full screen or embed on any webpage!</p>
+  <a class="book-demo" href="https://www.eko-client.com/#form">Book a demo</a>
+</div>
+
+<div id="Optimization" class="tabcontent">
+  <h1>Data that works for you</h1>
+  <p>Gain actionable insights that translate to quick feature, copy, and footage edits with A/B testing and optimization support available</p>
+  <a class="book-demo" href="https://www.eko-client.com/#form">Book a demo</a>
+</div>
+
+</div>
+
+
+<script>
+function openTab(tabName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(tabName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+   
+</body>
+</html> 
